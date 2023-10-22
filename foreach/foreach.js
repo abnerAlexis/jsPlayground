@@ -22,7 +22,23 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 
 
 //internal anonymous function
-days.forEach(function (item) {
-    console.log(item);
-});
+// days.forEach(function (item) {
+//     console.log(item);
+// });
 
+
+//Arrow function
+days.forEach( item => console.log(item) );
+
+console.log('\n\n\n');
+console.log(days);
+console.log(JSON.stringify(days));
+
+
+let anne = {
+    name: 'Anne',
+    age: 49,
+}
+
+console.log(anne);
+console.log(JSON.stringify(anne));
