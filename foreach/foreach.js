@@ -38,7 +38,9 @@ console.log(JSON.stringify(days));
 let anne = {
     name: 'Anne',
     age: 49,
+    children: ['Ali', 'Freddy', 'Jason', 'Margarete', 'Eliza'],
 }
 
-console.log(anne);
-console.log(JSON.stringify(anne));
+Object.keys(anne).forEach(function(property) {
+    console.log(anne[property]);
+});
