@@ -1,0 +1,14 @@
+/* Modern CSS */
+.container {
+    border: 5px solid limegreen;
+    width: min(100% - 2rem, 600px);
+    margin-inline: auto;
+}
+/* the code above and the below do the same */
+/* .container {
+    border: 5px solid limegreen;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 1em;
+    margin: 0 auto;
+} */
