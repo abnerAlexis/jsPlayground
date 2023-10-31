@@ -12,7 +12,7 @@ label {
 }
 
 /* Modern CSS */
-.container {
+.input-section {
     border: 5px solid limegreen;
     width: min(100% - 2rem, 600px);
     margin-inline: auto;
