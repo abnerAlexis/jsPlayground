@@ -3,12 +3,17 @@
     let emailInput = document.querySelector("#email");
     let passwordInput = document.querySelector("#password");
 
+    //an “@” symbol and a “.” required in the user input
     function validateEmail() {
-        return false;
+        let value = emailInput.value;
+        let hasAtSign = value.indexOf("@") > -1;
+        let hasDot = value.indexOf(".") > -1;
+        return value && hasAtSign && hasDot;
     }
 
     function validatePassword() {
-        return false;
+        let value = passwordInput.value; 
+        return value && value.length >= 8;
     }
 
     function validateForm() {
@@ -19,6 +24,8 @@
         e.preventDefault(); // do not submit to the server.
         if (validateForm()) {
             alert("Success");
+        } else {
+            alert("Password or email not valid.")
         }
     })
 
