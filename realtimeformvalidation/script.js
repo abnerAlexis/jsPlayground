@@ -7,7 +7,7 @@
     function showErrorMessage(input, message) {
         let container = input.parentElement; //The .input-wrapper
         //Check and remove any existing errors.
-        let error = containeer.querySelector("error-message");
+        let error = container.querySelector(".error-message");
         if (error) {
             container.removeChild(error);
         }
@@ -25,6 +25,8 @@
     function validateEmail() {
         let value = emailInput.value;
         // ! sign infront of value is called bang operator.
+        // if value is NOT true
+        // execute the following code 
         if (!value) {
             showErrorMessage(emailInput, "Email is a required field.");
             return false;
@@ -59,9 +61,15 @@
         showErrorMessage(passwordInput, null);
         return true;
     }
-
+    // By declaring variables (isValidEmail, isValidPassword) 
+    //and storing what’s returned from both validateEmail() 
+    //and validatePassword() in the variables, you can ensure 
+    //any errors that are stored in the declared variables are 
+    //both returned by validateForm.
     function validateForm() {
-        return validateEmail() && validatePassword();
+        let isValidEmail = validateEmail();
+        let isValidPassword = validatePassword();
+        return isValidEmail && isValidPassword;
     }
 
     form.addEventListener("submit", (e) => {
@@ -70,6 +78,7 @@
             alert("Success");
         } 
     })
-
+    emailInput.addEventListener("input", validateEmail);
+    passwordInput.addEventListener("input", validatePassword);
     //The Return Statement
 })();

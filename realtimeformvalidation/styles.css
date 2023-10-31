@@ -11,6 +11,10 @@ label {
     min-width: 75px;
 }
 
+.error-message {
+    color: red;
+    font-size: 0.8em;
+}
 /* Modern CSS */
 .input-section {
     border: 5px solid limegreen;
