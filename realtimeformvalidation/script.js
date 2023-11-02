@@ -81,4 +81,4 @@
     emailInput.addEventListener("input", validateEmail);
     passwordInput.addEventListener("input", validatePassword);
     //The Return Statement
-})();
+})(); 
