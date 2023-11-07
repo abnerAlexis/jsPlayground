@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box {
+    background-color: rgb(72, 0, 0);
+    color: bisque;
+    font-family: Tahoma;
+    font-size: 20px;
+    font-weight: 700px;
+    max-width: 200px;
+    max-height: 200px;
+}
