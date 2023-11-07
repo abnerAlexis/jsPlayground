@@ -52,4 +52,9 @@ $(document).ready(function () {
     $('#btn2').click(function () {
         $('.second').fadeToggle();
     });
+
+    //fadeTo changes the opacity
+    $('#btn1').on('click', function() {
+        $('#first').fadeTo('slow', 0.5);
+    })
 });
