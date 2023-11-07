@@ -57,4 +57,10 @@ $(document).ready(function () {
     $('#btn1').on('click', function() {
         $('#first').fadeTo('slow', 0.5);
     })
+
+    //slideToggle - can add one parameters as 'slow'or miliseconds
+    // or with no parameter
+    $('#slide-btn').on('click', function() {
+        $('#fourth').slideToggle(2000);
+    })
 });
