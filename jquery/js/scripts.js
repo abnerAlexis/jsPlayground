@@ -7,3 +7,13 @@ $('#btn2').click(function(){
 $('#btn3').on('click', function() {
     $('#third').hide();
 });
+
+$('body').keydown(function(event) {
+    if (event.which === 72) {
+        $('.second').hide();
+    }
+
+    if (event.which === 83) {
+        $('.second').show();
+    }
+})
