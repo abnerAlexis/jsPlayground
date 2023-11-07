@@ -10,6 +10,18 @@
     font-family: Tahoma;
     font-size: 20px;
     font-weight: 700px;
-    max-width: 200px;
-    max-height: 200px;
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    background-color: rgb(72, 0, 0);
+    width: 75px;
+    height: 25px;
+    color: bisque;
+    margin: 10px 10px;
+}
+
+button:hover {
+    background-color: rgba(72, 0, 0, 80%);
 }
