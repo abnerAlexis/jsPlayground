@@ -17,7 +17,7 @@ app.use(requestTime);
 
 app.get('/', (req, res) => {
     let responseText = 'Welcome to my app!';
-    responseText += '<large>Request at: ' + req.requestTime + '</large>';
+    responseText += '<small>Request at: ' + req.requestTime + '</small>';
     res.send(responseText);
 });
 
